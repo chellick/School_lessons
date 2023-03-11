@@ -1,2 +1,2 @@
-# school_lessons
+# School_lessons
  School lessons and other stuf
