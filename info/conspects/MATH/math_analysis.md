@@ -57,7 +57,6 @@ $$\lim_{n \to \infty} a_n = a \iff \forall \epsilon > 0, \exists N \in \mathbb{N
 
 ![lim](https://user-images.githubusercontent.com/110192173/225746075-f431fe00-9301-4974-aa06-40de664a3dcc.png)
 
-
 ------------
 
 ## Производная
