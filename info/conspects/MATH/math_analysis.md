@@ -88,29 +88,29 @@ $$\lim_{n \to \infty} a_n = a \iff \forall \epsilon > 0, \exists N \in \mathbb{N
 
 $$ c' = 0 $$
 
-$ kx' = k $
+$$ kx' = k $$
 
-$ x^n = nx^{n - 1} $
+$$ x^n = nx^{n - 1} $$
 
-$ (\frac{1}{x})' =  \frac{1}{-x^2} $
+$$ (\frac{1}{x})' =  \frac{1}{-x^2} $$
 
-$ (\sqrt{x})' = \frac{1}{2\sqrt{x}} $
+$$ (\sqrt{x})' = \frac{1}{2\sqrt{x}} $$
 
-$ (x\sqrt{x})' = \frac{3}{2}\sqrt{x} $
+$$ (x\sqrt{x})' = \frac{3}{2}\sqrt{x} $$
 
-$ (sin(x))' = cos(x) $
+$$ (sin(x))' = cos(x) $$
 
-$ (cos(x))' = -sin(x) $
+$$ (cos(x))' = -sin(x) $$
 
-$ (tg(x))' = \frac{1}{cos^2} $
+$$ (tg(x))' = \frac{1}{cos^2} $$
 
-$ (ctg(x))' = -\frac{1}{sin^2} $
+$$ (ctg(x))' = -\frac{1}{sin^2} $$
 
-$ (f(x) g(x))' = \lim_{n\to 0}, f'(x)g'(x) $
+$$ (f(x) g(x))' = \lim_{n\to 0}, f'(x)g'(x) $$
  
-$ (f(x) + g(x))' = \lim_{n\to 0}, f'(x) + g'(x) $
+$$ (f(x) + g(x))' = \lim_{n\to 0}, f'(x) + g'(x) $$
 
-$ (\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2} $
+$$ (\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2} $$
 
 ------------
 
