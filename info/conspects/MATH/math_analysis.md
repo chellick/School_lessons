@@ -38,7 +38,7 @@ $$\log_b{x} = y \iff b^y = x$$
 
 Здесь $b$ называется основанием логарифма, $x$ — аргументом логарифма, а $y$ — значением логарифма.
 
-![log](https://user-images.githubusercontent.com/110192173/225743497-cf7fd832-5055-45a6-8eb4-61847c10db33.png)
+![log](https://user-images.githubusercontent.com/110192173/225744230-115a6f0b-595a-4e92-b804-a61cc9a590ef.png)
 
 ------------
 
