@@ -14,4 +14,5 @@ For now on the best to startt with would be my conspects at [conspects](https://
 Also if you have some desire to work with GLobal optimisation algorythms check out via link!
 
 https://github.com/chellick/GA_PSO_Comparing
+
 https://github.com/chellick/Function_approximation
