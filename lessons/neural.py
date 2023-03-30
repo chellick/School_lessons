@@ -66,8 +66,6 @@ for t in test:
     yt.append(t[1])
 
 
-
-
 plt.scatter(x, y, color = 'red')
 plt.scatter(xt, yt, color = 'green')
 plt.plot(x1, y1, color = 'blue')
