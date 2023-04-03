@@ -49,3 +49,6 @@ for i in range(a):
 # for i in range(len(a)):
 #     a[i] += 1 + i
 # print(a)
+
+
+# Антон Борисович, не забывайте про игру!
