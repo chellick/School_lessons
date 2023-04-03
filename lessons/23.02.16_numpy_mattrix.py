@@ -10,5 +10,3 @@ c = np.hstack((p, t))
 
 print(c.T)
 
-# AB top
-
