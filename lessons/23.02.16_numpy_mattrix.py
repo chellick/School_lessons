@@ -9,3 +9,6 @@ t = [[5, 6],
 c = np.hstack((p, t))
 
 print(c.T)
+
+# AB top
+
