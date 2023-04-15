@@ -111,6 +111,12 @@ $$\lim_{n \to \infty} a_n = a \iff \forall \epsilon > 0, \exists N \in \mathbb{N
 
 * $(\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$
 
+* $(a^x)' = a^x \ln{a}$
+
+* $(\ln{x})' = \frac{1}{x} $
+
+* $(\log{x}{a})' = \frac{1}{x\ln{a}} $
+
 ------------
 
 ## Интеграл
@@ -138,3 +144,13 @@ Cумма бесконечного числа слагаемых, которые
 
 
 $$f(x,y,z,w) = 3x^2 - 2yzw + \sqrt{w} + \frac{x}{z} - \frac{y^2}{w}$$
+
+
+
+
+## Источники
+
+[3Blue1Brown](https://www.youtube.com/@3blue1brown)
+
+[DaVinci](https://www.youtube.com/@da_vinci_center)
+
