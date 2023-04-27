@@ -150,7 +150,6 @@ $$f(x,y,z,w) = 3x^2 - 2yzw + \sqrt{w} + \frac{x}{z} - \frac{y^2}{w}$$
 
 ## Источники
 
-[3Blue1Brown](https://www.youtube.com/@3blue1brown)
-
-[DaVinci](https://www.youtube.com/@da_vinci_center)
+*[3Blue1Brown](https://www.youtube.com/@3blue1brown)
+[DaVinci](https://www.youtube.com/@da_vinci_center)*
 
