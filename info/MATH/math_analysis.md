@@ -42,6 +42,21 @@ $$a^x = b \iff a^{\log_{a}{b}} = b$$
 
 ![log](https://user-images.githubusercontent.com/110192173/225744230-115a6f0b-595a-4e92-b804-a61cc9a590ef.png)
 
+Основные формулы логарифмирования:
+
+$a^0 = 1 \iff 0 = \log_{a}{1}
+\text{ при }  
+\begin{equation}
+\begin{cases}
+a > 0 \\
+a \ne 1
+\end{cases}
+\end{equation} $
+
+$$ a^1 = a \iff \log_{a}{a} = 1 $$
+
+
+
 ------------
 
 ## Предел
