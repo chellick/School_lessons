@@ -1,7 +1,7 @@
-import sys
-from functools import lru_cache
+# import sys
+# from functools import lru_cache
 
-sys.setrecursionlimit(10000)
+# sys.setrecursionlimit(10000)
 
 
 
@@ -88,16 +88,26 @@ sys.setrecursionlimit(10000)
 #
 # print(f(2023) + f(2021) - 2 * f(213))
 # print(1)
-from functools import lru_cache
-@lru_cache(None)
-def f(n):
-    if n <= 2:
-        return 1
-    if n == 2:
-        return 2
-    return n + f(n - 3) + f(n - 42)
-for i in range (2,2023):
-    f(i)
+# from functools import lru_cache
+# @lru_cache(None)
+# def f(n):
+#     if n <= 2:
+#         return 1
+#     if n == 2:
+#         return 2
+#     return n + f(n - 3) + f(n - 42)
+# for i in range (2,2023):
+#     f(i)
 
-x=f(2023) + f(2021) - 2 * f(213)
-print(sum(map(int,list(str(x)))))
+# x=f(2023) + f(2021) - 2 * f(213)
+# print(sum(map(int,list(str(x)))))
+
+
+lst = []
+
+def f(x, res):
+    lst.append(res)
+    return f(x + 1, res) + f(x + 2, res) + f(x * 2, res)
+
+
+print(f(1, 11))
