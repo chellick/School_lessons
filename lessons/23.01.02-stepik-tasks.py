@@ -56,3 +56,11 @@ print(i for i in range(lim1, lim2 + 1))
 # import numpy as np
 # a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 # print(type(a))
+
+
+string = '1' * 100
+
+while string.find('111') != -1:
+    if string.find('222'):
+        string.replace('222', '1')
+        
