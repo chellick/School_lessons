@@ -112,7 +112,7 @@ for i in itertools.product('КОНФЕТА', repeat=5):
         
 print(counter)
         
-"""
+
 import time
 start = time.time()
 
@@ -137,3 +137,5 @@ for i in itertools.product('CONST', repeat = 12):
 stop = time.time()
 
 print(stop - start)
+"""
+
