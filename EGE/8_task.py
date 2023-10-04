@@ -139,3 +139,35 @@ stop = time.time()
 print(stop - start)
 """
 
+import itertools
+
+"""
+c = 0
+
+for i in itertools.product("110110", repeat=4):
+    if i[0] == "1" and i[-1] == "0":
+        c += 1
+    
+print(c)
+
+
+c = 0
+
+for i in itertools.product("ABC1111", repeat=6):
+    i = "".join(i)
+
+    if i[0] == "1" and i[-1] == "1" and i[1:-1].count("1") == 0:
+        c += 1
+        print(i, i[1:-1])
+print(c)
+"""
+
+
+c = 0
+
+for i in itertools.product("ПУЛЯ", repeat=6):
+    i = "".join(i)
+    if i.count("У") == 2:
+        c += 1
+
+print(c)
