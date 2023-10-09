@@ -161,7 +161,7 @@ for i in itertools.product("ABC1111", repeat=6):
         print(i, i[1:-1])
 print(c)
 """
-
+"""
 
 c = 0
 
@@ -171,3 +171,12 @@ for i in itertools.product("ПУЛЯ", repeat=6):
         c += 1
 
 print(c)
+
+"""
+
+s = sorted('ПАРУС')
+
+for a, i in enumerate(itertools.product(s, repeat=4), 1):
+    if i[0] == "Р":
+        print(i, a)
+        break
