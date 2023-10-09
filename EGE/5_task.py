@@ -148,7 +148,7 @@ for n in range(100, 1000):
 print(max_n, max_primes)
 """  
 
-
+"""
 def algo(n):
     bin_n = bin(n)[2:]
     if n % 3 == 0:
@@ -162,17 +162,18 @@ for i in range(4, 1000):
     if algo(i) <= 170:
         print(i , algo(i))
 
-# maxi = 0
-# for n in range(4, 1000):
+maxi = 0
+for n in range(4, 1000):
     
-#     s = bin(n)[2:] # перевод в двоичную систему
-#     if n % 3 == 0:
-#         s += bin(n)[-3:]
-#     else:
-#         s += bin((n%3)*3)[2:]
-#     r = int(s,2)
+    s = bin(n)[2:] # перевод в двоичную систему
+    if n % 3 == 0:
+        s += bin(n)[-3:]
+    else:
+        s += bin((n%3)*3)[2:]
+    r = int(s,2)
     
-#     if r < 170 and r > maxi:
-#         maxi = r
-#         print(n)
-# print(maxi)
+    if r < 170 and r > maxi:
+        maxi = r
+        print(n)
+print(maxi)
+"""
