@@ -7,7 +7,7 @@ This repositoriy - my interpretation of all info I've gained trough y school-yea
 ## How to use?
 
 For now on the best to start with would be my conspects at [conspects](https://github.com/chellick/School_lessons/tree/main/info/conspects). Which contains info for:
-
+Also some EGE tasks in EGE folder + useful [repo](https://github.com/voronov-nikita/EGE)
 * Linear algebra
 * Math analysis
 * Useful IT themes
