@@ -177,3 +177,22 @@ for n in range(4, 1000):
         print(n)
 print(maxi)
 """
+
+
+
+def algo(n):
+    r = bin(n)[2:]
+    if n % 4 == 0:
+        r += r[-2:]
+    
+    else:
+        r = bin((n % 4) * 2)[2:] + r
+    return int(r, 2)
+ 
+for n in range(3, 1000):
+    r = algo(n)
+    if r < 68:
+
+        print(n)
+        
+        

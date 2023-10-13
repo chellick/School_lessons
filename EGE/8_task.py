@@ -172,7 +172,7 @@ for i in itertools.product("ПУЛЯ", repeat=6):
 
 print(c)
 
-"""
+
 
 s = sorted('ПАРУС')
 
@@ -180,3 +180,6 @@ for a, i in enumerate(itertools.product(s, repeat=4), 1):
     if i[0] == "Р":
         print(i, a)
         break
+        
+        
+"""
