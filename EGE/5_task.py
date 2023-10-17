@@ -176,7 +176,7 @@ for n in range(4, 1000):
         maxi = r
         print(n)
 print(maxi)
-"""
+
 
 
 
@@ -195,4 +195,87 @@ for n in range(3, 1000):
 
         print(n)
         
+    
+def algo(n):
+    r = bin(n)[2:].zfill(8)
+    r = r[:2] + r[-2:]
+    return int(r, 2)
+
+for n in range(131, 1000):
+    if algo(n) == 10:
+        print(n, algo(n))
+        break
+ 
+
+def algo(n):
+    r = bin(n)[2:]
+    if r.count("1") % 2 == 0:
+        r = '1' + r + '00'
+    else:
+        r = '11' + r
+    return int(r, 2)
+
+print(algo(13), algo(12))
+
+minimum = 100000
+for n in range(1, 1000):
+    r = algo(n)
+    if r >= 412:
+        if minimum > n:
+            minimum = n
+            print(n, r)
+print(minimum)
+
+
+
+def algo(n):
+    n = [int(i) for i in str(n)]
+    num1 = n[0] + n[1]
+    num2 = n[1] + n[2]
+    num3 = n[2] + n[3]
+    r  = "".join(sorted([str(num1), str(num2), str(num3)])[1:])
+    
+    return int(r)
+
+print(algo(1000))
+
+for n in range(10000, 999, -1):
+    r = algo(n)
+    if r == 1517:
+        print(n)
         
+# print(algo(9575))
+
+
+def algo(n):
+    n = list(sorted([int(i) for i in str(n)], reverse=True))
+    num = int(str(n[0]) + str(n[1])) - int(str(n[-1]) + str(n[-2]))
+    return num
+
+
+c = 0
+for i in range(800, 901):
+    if algo(i) == 30:
+        c += 1
+        
+print(c)
+
+"""   
+
+def algo(n):
+    n = [int(i) for i in str(n)]
+    n = [bin(i)[2:].zfill(4) for i in n]
+    m = []
+    for i in "".join(n):
+        if i == "0":
+            m.append("1")
+        else:
+            m.append("0")
+            
+    return int("".join(m), 2)
+
+for n in range(1, 1000):
+    if algo(n) == 151:
+        print(n)
+        break
+
