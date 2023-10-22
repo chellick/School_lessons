@@ -182,4 +182,228 @@ for a, i in enumerate(itertools.product(s, repeat=4), 1):
         break
         
         
+
+
+import itertools
+
+
+c = 0
+
+for i in itertools.product('WXYZ', repeat=2):
+    for j in itertools.product('ABC', repeat=4):
+        string = i[0] + "".join(j) + i[-1]
+        c+=1
+        
+print(c)
+
+
+
+a = 'МИМИКРИЯ'
+c = 0
+
+
+
+print(len(list(set((itertools.permutations(a))))))
+
+import itertools
+
+for a, i in enumerate(itertools.product(sorted('МАРИЯ'), repeat=4), 1):
+    if a == 211:
+        print(i)
+        break
+ 
+        
+a = 'ПУЛЯ'
+c = 0
+
+for i in itertools.product(a, repeat=6):
+    if "".join(i).count("У") == 2:
+        c += 1
+
+print(c)
+
+
+a = 'ЛОДКА'
+c = 0
+
+for i in itertools.product(a, repeat=4):
+    if "".join(i).count('О') >= 2:
+        c += 1
+        
+print(c)
+
+a = 'САЛО'
+c = 0
+
+for i in itertools.product(a, repeat=6):
+    if 1 <= i.count('О') <= 3:
+        c+=1
+        print(i)
+        
+print(c)
+
+
+a = 'ИГРОК'
+c = 0
+
+for i in itertools.permutations(a, r=5):
+    i = "".join(i)
+    if i[0] == 'К' or 'РОК' in i:
+        continue
+    else:
+        print(i)
+        c+=1
+        
+print(c)
+
+
+
+a = "10101010"
+c = 0
+
+for i in itertools.permutations(a, r=8):
+    i = "".join(i)
+    if '00' in i or '11' in i:
+        continue
+    
+    else:
+        c += 1
+        
+print(c)
+
+
+
+a = '11000'
+c = 0
+
+for i in itertools.product(a, repeat=8):
+    i = "".join(i)
+    if i.count('1') == 2:
+        c += 1
+        print(i)
+    else:
+        continue
+    
+print(c)
+
+
+a = '01234'
+c = 0
+
+for i in itertools.product(a, repeat=6):
+    if i[0] == '0' or i[0] == '1' or i[-1] == '3' or i[-1] == '4':
+        continue
+    else:
+        c += 1
+        
+print(c)
+
+a = '01232323'
+c = 0
+
+for i in itertools.permutations(a, r=5):
+    i = "".join(i)
+    if i[0] != '0' and i.count('1') == 0:
+        if '22' not in i and '33' not in i and '02' not in i and '20' not in i:
+            c += 1
+            print(i)
+            
+            
+print(c)
+
+
+
+a = 'ВИШНЯ'
+c = 0
+
+for i in itertools.product(a, repeat=6):
+    if i.count('В') <= 1 and i[0] != 'Ш' and i[-1] not in ('И', 'Я'):
+        c+=1
+        print(i)
+    
+print(c)
+
+
+a = 'ABCD'
+c = 0
+s = []
+for i in itertools.product(a, repeat=4):
+    i = "".join(i)
+    if i not in s:
+        s.append("".join(sorted(i)))
+    else:
+        continue
+        
+print(s, len(set(s)))
+
+a = 'ГЕПАРД'
+c = 0
+for i in itertools.product(a, repeat=5):
+    if i.count('Г') == 1 and i[0] != 'А' and i[-1] != 'Е':
+        c+=1
+        
+print(c)
+
+a = '0123456789'
+c = 0
+s = []
+
+for i in itertools.product(a, repeat=3):
+    i = "".join(sorted(i))
+    if i[0] != '0':
+        s.append(i)
+
+print(s, len(set(s)))
+
+a = '01Й00001'
+c = 0
+
+for i in itertools.permutations(a, r=6):
+    i = "".join(i)
+    if i.count("Й") == 1:
+        if 'Й0' in i:
+            c += 1
+            print(i)
+
+print(c)
+
+
+a = 'ВАЙФУ'
+c = 0
+for i in itertools.permutations(a, r=4):
+    i = "".join(i)
+    if i[0] != 'Й' and 'ВФ' not in i and 'ФВ' not in i:
+        c += 1
+        print(i)
+        
+print(c)
+
+
+
+a = sorted('ЛЕМУР')
+c = 0
+
+for a, i in enumerate(itertools.product(a, repeat=4), 1):
+    if i[0] == 'Л':
+        print(i, a)
+        break
+
+
+a = sorted('АЛГОРИТМ')
+
+for a, i in enumerate(itertools.product(a, repeat=4), 1):
+    i = "".join(i)
+    if i[-2:] == 'ИМ':
+        print(i, a)
+    
+
 """
+
+a = sorted('МАРИЯ')
+
+for a, i in enumerate(itertools.product(a, repeat=4), 1):
+    i = "".join(i)
+    if 'АРИЯ' in i:
+        print(i, a)
+        break
+
