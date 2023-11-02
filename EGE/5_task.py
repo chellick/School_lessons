@@ -260,7 +260,6 @@ for i in range(800, 901):
         
 print(c)
 
-"""   
 
 def algo(n):
     n = [int(i) for i in str(n)]
@@ -279,3 +278,19 @@ for n in range(1, 1000):
         print(n)
         break
 
+
+"""  
+def algo(n):
+    bin_n = bin(n)[2:]
+    bin_n += bin(n % 3)[2:4].zfill(2)
+    bin_n += bin(int(bin_n, 2) % 5)[2:5].zfill(3)
+    return int(bin_n, 2)
+
+
+c = 0
+
+# for i in range(11110, 1444444416):
+#     if 1111111110 < algo(i) < 1444444416:
+#         c+=1
+        
+print(2**11) # 10416665

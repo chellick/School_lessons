@@ -162,7 +162,7 @@ for j in range(50):
         if i[0] == "0" and i[-1] == "0" and i.count("2") == i.count("1"):
             i = alg(i)
             i = check(i)
-""" 
+
 
 def r(s):
     while '56' in s or '1111' in  s:
@@ -171,3 +171,20 @@ def r(s):
     return s
 
 print(r('561' * 102))
+""" 
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103]
+
+
+import itertools
+def algo(s):
+    while "01" in s or "02" in s:
+        s = s.replace("02", "1110", 1)
+        s = s.replace("01", "220", 1)
+    return sum([int(i) for i in s])
+
+s = "012"
+for times in range(40, 50):
+    for i in itertools.product(s, repeat=times):
+        print("".join(i))
+        if algo("".join(i)) in primes:
+            print("".join(i), times, algo("".join(i)))
