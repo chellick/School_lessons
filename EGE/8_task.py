@@ -397,7 +397,7 @@ for a, i in enumerate(itertools.product(a, repeat=4), 1):
         print(i, a)
     
 
-"""
+
 
 a = sorted('МАРИЯ')
 
@@ -406,4 +406,14 @@ for a, i in enumerate(itertools.product(a, repeat=4), 1):
     if 'АРИЯ' in i:
         print(i, a)
         break
+"""
+
+word = '101010'
+c = 0
+
+for i in itertools.product(word, repeat=8):
+    if i.count("1") > i.count("0"):
+        c+=1
+        
+print(c)
 
