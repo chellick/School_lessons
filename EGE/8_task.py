@@ -406,7 +406,7 @@ for a, i in enumerate(itertools.product(a, repeat=4), 1):
     if 'АРИЯ' in i:
         print(i, a)
         break
-"""
+
 
 word = '101010'
 c = 0
@@ -417,3 +417,15 @@ for i in itertools.product(word, repeat=8):
         
 print(c)
 
+"""
+
+import itertools
+
+d = "КАТЕР"
+c = 0
+
+for i in itertools.product(d, repeat=6):
+    if i[0] == 'Р' and i[-1] == 'К':
+        c += 1
+        
+print(c)
