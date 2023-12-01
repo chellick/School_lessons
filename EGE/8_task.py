@@ -417,7 +417,7 @@ for i in itertools.product(word, repeat=8):
         
 print(c)
 
-"""
+
 
 import itertools
 
@@ -428,4 +428,30 @@ for i in itertools.product(d, repeat=6):
     if i[0] == 'Р' and i[-1] == 'К':
         c += 1
         
+print(c)
+
+
+d = '1010'
+c = 0
+for i in itertools.product(d, repeat=6):
+    i = "".join(i)
+    if '11' in i or '00' in i:
+        continue
+    print(i)
+    c += 1
+
+print(c, i)
+"""
+
+d = sorted('РЕПЛИКА')
+c = 0
+
+for num, i in enumerate(itertools.product(d, repeat=6), 1):
+    if num % 2 == 0:
+        i = "".join(i) 
+        if i[0] != 'К' and i.count('И') >= 2:
+            c += 1
+            print(i, num)
+            
+            
 print(c)
