@@ -443,15 +443,25 @@ for i in itertools.product(d, repeat=6):
 print(c, i)
 """
 
-d = sorted('РЕПЛИКА')
+# d = sorted('РЕПЛИКА')
+# c = 0
+
+# for num, i in enumerate(itertools.product(d, repeat=6), 1):
+#     if num % 2 == 0:
+#         i = "".join(i) 
+#         if i[0] != 'К' and i.count('И') >= 2:
+#             c += 1
+#             print(i, num)
+            
+            
+# print(c)
+
+
+d = '10101010'
 c = 0
 
-for num, i in enumerate(itertools.product(d, repeat=6), 1):
-    if num % 2 == 0:
-        i = "".join(i) 
-        if i[0] != 'К' and i.count('И') >= 2:
-            c += 1
-            print(i, num)
-            
-            
+for i in itertools.product(d, repeat=6):
+    if i.count('1') < i.count('0'):
+        c += 1
+        
 print(c)
