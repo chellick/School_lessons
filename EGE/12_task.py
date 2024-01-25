@@ -189,24 +189,26 @@ for times in range(40, 50):
         if algo("".join(i)) in primes:
             print("".join(i), times, algo("".join(i)))
 
-"""
-import itertools
+# """
+# import itertools
 
-d = '3' * 50 + '6' * 50 + '9' * 50
+# d = '3' * 50 + '6' * 50 + '9' * 50
 
-for s in itertools.permutations(d):
-    temp = s
-    while '63' in temp or '69' in temp or '93' in temp:
-        if '63' in temp:
-            temp = temp.replace('63', '36', 1)
-        if '69' in temp:
-            temp = temp.replace('69', '96', 1)
-        if '93' in temp:
-            temp = temp.replace('93', '39', 1)
+# for s in itertools.permutations(d):
+#     temp = s
+#     while '63' in temp or '69' in temp or '93' in temp:
+#         if '63' in temp:
+#             temp = temp.replace('63', '36', 1)
+#         if '69' in temp:
+#             temp = temp.replace('69', '96', 1)
+#         if '93' in temp:
+#             temp = temp.replace('93', '39', 1)
     
-    try:
-        print(temp[43], temp[101], temp[145])
-        break
-    except:
-        ...
-        
+#     try:
+#         print(temp[43], temp[101], temp[145])
+#         break
+#     except:
+#         ...
+
+
+    
