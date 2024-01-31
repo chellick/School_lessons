@@ -466,26 +466,27 @@ print(c, i)
         
 # print(c)
 
-d = '0123456789ABCDEF'
-a = '2468ACE'
-b = '13579BDF'
+# d = '0123456789ABCDEF'
+# a = '2468ACE'
+# b = '13579BDF'
 
-count = 0
+# count = 0
 
-for n in itertools.product(a+b, repeat=4):
-    if n[0] != '0':
-        if len(set(n)) == len(n):
-            n_chet = []
-            n_nechet = []
-            for i in n:
-                if i in a:
-                    n_chet.append(int(i, 16))
-                else:
-                    n_nechet.append(int(i, 16))
+# for n in itertools.product(a+b, repeat=4):
+#     if n[0] != '0':
+#         if len(set(n)) == len(n):
+#             n_chet = []
+#             n_nechet = []
+#             for i in n:
+#                 if i in a:
+#                     n_chet.append(int(i, 16))
+#                 else:
+#                     n_nechet.append(int(i, 16))
             
-            if len(n_chet) == len(n_nechet) and sum(n_chet) == sum(n_nechet):
-                count += 1
-                print(n)
+#             if len(n_chet) == len(n_nechet) and sum(n_chet) == sum(n_nechet):
+#                 count += 1
+#                 print(n)
                 
-print(count)
+# print(count)
+            
             
