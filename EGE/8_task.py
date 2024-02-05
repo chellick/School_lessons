@@ -489,4 +489,15 @@ print(c, i)
                 
 # print(count)
             
+
+
+# d = '0123'
+# c = 0
+
+# for i in itertools.product(d, repeat=3):
+#     if i[0] != '0':
+#         if int(i[0]) + int(i[-1]) > int(i[1]):
+#             c += 1
+#             print(i)
             
+# print(c)
