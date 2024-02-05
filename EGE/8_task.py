@@ -501,3 +501,11 @@ print(c, i)
 #             print(i)
             
 # print(c)
+
+a = sorted('АКРУ')
+
+for s, i in enumerate(itertools.product(a, repeat=5), 1):
+    if i[0] == 'У':
+        print(s, i)
+        break
+    
