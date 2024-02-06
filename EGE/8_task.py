@@ -502,10 +502,23 @@ print(c, i)
             
 # print(c)
 
-a = sorted('АКРУ')
+# a = sorted('АКРУ')
 
-for s, i in enumerate(itertools.product(a, repeat=5), 1):
-    if i[0] == 'У':
-        print(s, i)
-        break
+# for s, i in enumerate(itertools.product(a, repeat=5), 1):
+#     if i[0] == 'У':
+#         print(s, i)
+#         break
     
+    
+d = 'ABCDEXZ'
+
+c = 0
+
+for i in itertools.product(d, repeat=4):
+    if i[0] in 'XZ'and\
+        i[1] in 'XZ'and\
+            i[2] in 'ABCDE'and\
+                i[3] in 'ABCDE':
+        c += 1 
+        
+print(c)
