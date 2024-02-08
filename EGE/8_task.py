@@ -510,15 +510,25 @@ print(c, i)
 #         break
     
     
-d = 'ABCDEXZ'
+# d = 'ABCDEXZ'
 
-c = 0
+# c = 0
 
-for i in itertools.product(d, repeat=4):
-    if i[0] in 'XZ'and\
-        i[1] in 'XZ'and\
-            i[2] in 'ABCDE'and\
-                i[3] in 'ABCDE':
-        c += 1 
+# for i in itertools.product(d, repeat=4):
+#     if i[0] in 'XZ'and\
+#         i[1] in 'XZ'and\
+#             i[2] in 'ABCDE'and\
+#                 i[3] in 'ABCDE':
+#         c += 1 
         
-print(c)
+# print(c)
+
+d = sorted('АЛГОРИТМ')
+
+for a, i in enumerate(itertools.product(d, repeat=4), 1):
+    # print(a, i)
+    # break
+    if i[0] == 'И' and i[1] == 'Г':
+        print(a, i)
+        break
+    
