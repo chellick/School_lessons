@@ -523,12 +523,29 @@ print(c, i)
         
 # print(c)
 
-d = sorted('АЛГОРИТМ')
+# d = sorted('АЛГОРИТМ')
 
-for a, i in enumerate(itertools.product(d, repeat=4), 1):
-    # print(a, i)
-    # break
-    if i[0] == 'И' and i[1] == 'Г':
-        print(a, i)
-        break
+# for a, i in enumerate(itertools.product(d, repeat=4), 1):
+#     # print(a, i)
+#     # break
+#     if i[0] == 'И' and i[1] == 'Г':
+#         print(a, i)
+#         break
     
+d = '0123456789AB'
+co = 0
+
+for i in itertools.product(d, repeat=8):
+    if i[0] != '0':
+        
+        c = 0
+        
+        for el in i:
+            if el in ('12357B'):
+                c += 1
+        
+        if c >= 2:
+            if int(i[0], 12) % 2 != int(i[-1], 12) % 2:
+                co += 1
+
+print(co)
