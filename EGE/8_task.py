@@ -343,4 +343,21 @@ for i in itertools.product(a, repeat=5):
         c+=1
         
 print(c)
+"""
 
+def prost(num):
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0: return False
+    return True
+
+def nechet(num):
+    while num % 2 == 0:
+        num //= 2
+    return num
+    
+
+for i in range(45000000, 50000000+1):
+    num = nechet(i)
+    if ((num ** 0.25) == int(num ** 0.25)) and prost(num ** 0.25):
+        print(i)
+        
